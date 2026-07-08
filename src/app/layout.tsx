@@ -11,6 +11,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN" className="h-full antialiased">
+      <head>
+        {/* Google AdSense 脚本 - 在获取发布商 ID 后替换 ca-pub-XXXXXXXXXXXXXXXX */}
+        {/* 取消注释以下行并替换为你的实际发布商 ID */}
+        {/* 
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossOrigin="anonymous"
+        />
+        */}
+      </head>
       <body className="min-h-full flex flex-col bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
         <Header />
         {children}

@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import { tools, categories } from '@/lib/data';
 import { SearchBar } from '@/components/SearchBar';
 import { ToolCard } from '@/components/ToolCard';
+import { FooterAd } from '@/components/AdSense';
 
 export default function Home() {
   const [query, setQuery] = useState('');
@@ -58,6 +59,9 @@ export default function Home() {
             <p>没有找到匹配的工具，试试其他关键词？</p>
           </div>
         )}
+
+        {/* 底部广告位 */}
+        <FooterAd />
       </section>
     </main>
   );

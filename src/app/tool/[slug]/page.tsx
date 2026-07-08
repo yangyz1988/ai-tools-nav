@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { tools } from '@/lib/data';
 import type { Metadata } from 'next';
+import { InContentAd } from '@/components/AdSense';
 
 interface Props { params: Promise<{ slug: string }>; }
 
@@ -64,6 +65,9 @@ export default async function ToolPage({ params }: Props) {
           </svg>
         </a>
       </div>
+
+      {/* 内容区域广告位 */}
+      <InContentAd />
     </main>
   );
 }
