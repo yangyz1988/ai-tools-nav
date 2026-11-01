@@ -575,4 +575,14 @@ export const tools: AITool[] = [
     pricing: 'Freemium',
     features: ['文字生图', '魔法编辑', '海量模板', '团队协作'],
   },
+  {
+    slug: 'agent-qa',
+    name: 'agent-qa',
+    description: 'Web、Android 与 iOS 自然语言测试，结合 memidex 持久记忆和经验证的自我改进。CLI 免费，模型服务费用另计。',
+    category: 'coding',
+    tags: ['自然语言测试', '持久记忆', 'MCP'],
+    url: 'https://vostride.com',
+    pricing: 'Free',
+    features: ['Web、Android 与 iOS 测试', 'memidex 持久记忆', '经验证的自我改进', 'CLI 与 MCP 接口'],
+  },
 ];
